@@ -13,18 +13,17 @@ btn.addEventListener('click', () => {
     }
 
     // Logique "C'est plus / C'est moins"
-    if (guess < targetYear) {
-        feedback.textContent = "C'est plus !";
-        updateProgress(guess, targetYear);
+if (guess < targetYear) {
+        feedback.textContent = "C'EST PLUS !";
+        feedback.style.color = "white";
     } else if (guess > targetYear) {
-        feedback.textContent = "C'est moins !";
-        updateProgress(guess, targetYear);
+        feedback.textContent = "C'EST MOINS !";
+        feedback.style.color = "white";
     } else {
-        feedback.textContent = "Bravo ! 1956 : Conférence de Dartmouth.";
+        feedback.innerHTML = "BRAVO ! <br><span style='font-size: 1.5rem'>1956 : Conférence de Dartmouth</span>";
+        feedback.style.color = "#00FFFF"; // Cyan pour le succès
         progressBar.style.width = "100%";
-        feedback.style.color = "#00FFFF";
     }
-});
 
 function updateProgress(guess, target) {
     // Calcul de proximité arbitraire pour la barre (0-100%)
