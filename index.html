@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Origine de l'IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <h1 class="title">Quand l'IA est-elle née ?</h1>
+            <p class="instruction">Saisissez l'année de la conférence de Dartmouth :</p>
+            
+            <div class="input-wrapper">
+                <input type="number" id="userGuess" placeholder="YYYY" maxlength="4" class="typewriter-input">
+            </div>
+
+            <button id="checkBtn" class="btn-action">VÉRIFIER</button>
+
+            <div id="feedback" class="feedback"></div>
+
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
