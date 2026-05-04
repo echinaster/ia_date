@@ -1,11 +1,13 @@
+/* Import de la police */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@400;600&display=swap');
+
 :root {
     --prune: #7B2042;
     --bordeaux: #8E2B51;
     --rose-pastel: #FF99AC;
+    /* Dégradé Cyan vers Violet pour le bouton */
     --cyan-violet: linear-gradient(135deg, #00FFFF 0%, #8A2BE2 100%);
 }
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     background-color: var(--prune);
@@ -14,83 +16,46 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1920px;
-    aspect-ratio: 16 / 9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
 .card {
     background-color: var(--bordeaux);
     padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-radius: 25px;
     text-align: center;
-    width: 600px;
+    width: 800px; /* Plus large pour le format 16:9 */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
 .title {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great', cursive; /* Nom exact */
     color: var(--rose-pastel);
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-.instruction { color: #fff; margin-bottom: 2rem; }
-
-.typewriter-input {
-    background: transparent;
-    border: none;
-    border-bottom: 3px solid var(--rose-pastel);
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5rem;
-    text-align: center;
-    width: 150px;
-    outline: none;
-    margin-bottom: 2rem;
+    font-size: 4.5rem; /* Augmenté */
+    margin-bottom: 1rem;
 }
 
 .btn-action {
-    background: var(--cyan-violet);
+    background: var(--cyan-violet) !important; /* Force le dégradé */
     border: none;
-    padding: 1rem 2.5rem;
+    padding: 1.2rem 3rem;
     color: white;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.2s;
-    font-size: 1.1rem;
+    text-transform: uppercase;
 }
-
-.btn-action:hover { transform: scale(1.05); }
 
 .feedback {
-    margin-top: 2rem;
-    height: 1.5rem;
+    margin-top: 2.5rem;
+    font-size: 2.5rem; /* Taille augmentée pour "Bravo / Plus / Moins" */
+    font-weight: 800;
     color: #fff;
-    font-weight: 600;
-}
-
-.progress-container {
-    width: 100%;
-    background: rgba(255,255,255,0.1);
-    height: 10px;
-    border-radius: 5px;
-    margin-top: 2rem;
-    overflow: hidden;
+    min-height: 3.5rem;
 }
 
 .progress-bar {
-    width: 0%;
-    height: 100%;
     background-color: var(--rose-pastel);
-    transition: width 0.5s ease;
+    /* ... reste du code identique ... */
 }
