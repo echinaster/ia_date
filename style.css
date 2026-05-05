@@ -29,30 +29,29 @@ body {
 }
 
 .title {
-    font-family: 'Fredericka the Great', cursive; /* Nom exact */
-    color: var(--rose-pastel);
-    font-size: 4.5rem; /* Augmenté */
-    margin-bottom: 1rem;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 5rem; /* Très gros titre */
+    color: #FF99AC;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 
 .btn-action {
-    background: var(--cyan-violet) !important; /* Force le dégradé */
+    background: linear-gradient(135deg, #00FFFF 0%, #8A2BE2 100%);
     border: none;
-    padding: 1.2rem 3rem;
+    padding: 15px 40px;
     color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.8rem;
     border-radius: 50px;
     cursor: pointer;
-    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+    transition: transform 0.2s;
 }
 
 .feedback {
-    margin-top: 2.5rem;
-    font-size: 2.5rem; /* Taille augmentée pour "Bravo / Plus / Moins" */
-    font-weight: 800;
-    color: #fff;
-    min-height: 3.5rem;
+    font-size: 3.5rem; /* La réponse "C'est plus / moins" sera énorme */
+    font-weight: bold;
+    margin-top: 30px;
+    min-height: 80px;
 }
 
 .progress-bar {
